@@ -42,6 +42,13 @@ public class UserController {
 	}
 
 	@ResponseBody
+	@ApiOperation(value = "findUserAllsql", notes = "findUserAllsql")
+	@RequestMapping(value = "/findUserAllsql", method = RequestMethod.GET)
+	public List findUserAllsql() {
+		return baseJDBCRepository.jdbcsql("select * from sys_user");
+	}
+
+	@ResponseBody
 	@ApiOperation(value = "findUserByWXID", notes = "findUserByWXID")
 	@ApiImplicitParam(name = "wxid", value = "wxid", required = true, dataType = "String")
 	@RequestMapping(value = "/findUserByWXID", method = RequestMethod.POST)

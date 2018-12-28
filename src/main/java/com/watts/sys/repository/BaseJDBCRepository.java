@@ -33,6 +33,9 @@ public class BaseJDBCRepository {
 		return jdbcTemplate.query(sql, new BeanPropertyRowMapper(model));
 	}
 
+	public List jdbcsql(String sql){
+		return jdbcTemplate.queryForList(sql);
+	}
 	public Integer jdbcSqlSize(String sql) {
 		logger.info("jdbcSqlSize:" + sql);
 		return jdbcTemplate.queryForObject(sql, null, Integer.class);
