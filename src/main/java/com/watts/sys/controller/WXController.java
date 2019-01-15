@@ -48,7 +48,7 @@ public class WXController {
 
 	}
 
-	@RequestMapping(value = "wxdemo", method = RequestMethod.POST)
+	@RequestMapping(value = "login", method = RequestMethod.POST)
 	public void dopost(HttpServletRequest request, HttpServletResponse response) {
 		response.setCharacterEncoding("utf-8");
 		PrintWriter out = null;

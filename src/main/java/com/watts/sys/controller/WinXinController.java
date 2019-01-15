@@ -30,7 +30,7 @@ import net.sf.json.xml.XMLSerializer;
 public class WinXinController {
 
 	private Log logger = LogFactory.getLog(WinXinController.class);
-	private String Token = "liuyu";
+	private String Token = "xiaobinggan";
 	private String echostr;
 
 	/**
